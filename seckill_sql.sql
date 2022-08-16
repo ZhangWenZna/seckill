@@ -56,5 +56,21 @@ create table t_seckill_order(
     primary key (id)
 );
 
+select
+    g.id,
+    g.goods_name,
+    g.goods_title,
+    g.goods_img,
+    g.goods_detail,
+    g.goods_price,
+    g.goods_stock,
+    sg.seckill_price,
+    sg.stock_count,
+    sg.start_date,
+    sg.end_date
+    from
+        u_goods g left join t_seckill_goods as sg on g.id=sg.goods_id
+    where g.id=1
+
 
 

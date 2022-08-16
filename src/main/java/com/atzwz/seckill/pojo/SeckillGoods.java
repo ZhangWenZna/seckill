@@ -3,6 +3,7 @@ package com.atzwz.seckill.pojo;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -44,11 +45,13 @@ public class SeckillGoods implements Serializable {
     /**
      * 秒杀开始时间
      */
+    @JsonFormat
     private Date startDate;
 
     /**
      * 秒杀结束时间
      */
+    @JsonFormat
     private Date endDate;
 
 
