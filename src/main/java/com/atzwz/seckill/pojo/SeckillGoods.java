@@ -45,13 +45,13 @@ public class SeckillGoods implements Serializable {
     /**
      * 秒杀开始时间
      */
-    @JsonFormat
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date startDate;
 
     /**
      * 秒杀结束时间
      */
-    @JsonFormat
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date endDate;
 
 

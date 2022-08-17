@@ -37,7 +37,7 @@ public class SeckillOrder implements Serializable {
     /**
      * 商品id
      */
-    private Long doodsId;
+    private Long goodsId;
 
 
 }

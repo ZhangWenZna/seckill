@@ -76,5 +76,4 @@ public class Order implements Serializable {
      */
     private Date payDate;
 
-
 }

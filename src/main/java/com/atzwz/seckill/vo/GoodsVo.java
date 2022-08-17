@@ -18,10 +18,11 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Component
-@JsonFormat
 public class GoodsVo extends Goods {
     private BigDecimal seckillPrice;
     private Integer stockCount;
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date starDate;
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date endDate;
 }

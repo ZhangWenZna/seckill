@@ -52,7 +52,7 @@ create table t_seckill_order(
     id bigint(20) not null auto_increment comment '秒杀订单id',
     user_id bigint(20) default null comment '用户id',
     order_id bigint(20) default null comment '订单id',
-    doods_id bigint(20) default null comment '商品id',
+    goods_id bigint(20) default null comment '商品id',
     primary key (id)
 );
 
