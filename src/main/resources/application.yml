@@ -21,7 +21,7 @@ spring:
       connection-timeout: 30000
       connection-test-query: SELECT 1
   redis:
-    host: 192.168.10.142
+    host: 192.168.10.143
     timeout: 10000ms
     lettuce:
       pool:
